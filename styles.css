@@ -153,7 +153,8 @@ button:focus-visible {
 }
 
 .nav a:hover,
-.nav a[aria-current="page"] {
+.nav a[aria-current="page"],
+.nav a[href^="tel:"] {
   color: var(--gold);
 }
 
@@ -299,15 +300,31 @@ h1 {
 
 .badge img {
   display: none;
-  height: 64px;
+  height: 70px;
   width: auto;
-  max-width: 46%;
+  max-width: 78%;
   object-fit: contain;
-  object-position: left center;
+}
+
+.badge.has-image {
+  justify-content: center;
 }
 
 .badge.has-image img {
   display: block;
+}
+
+.badge.has-image .badge-text,
+.badge.has-image .badge-index {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .badge-index {
@@ -549,29 +566,27 @@ figcaption {
   font-size: 1.05rem;
 }
 
-.policy-body strong {
-  color: var(--white);
-  font-weight: 600;
-}
-
-.call-bar {
-  display: none;
-}
-
 @media (max-width: 900px) {
-  .hero,
-  .credentials,
-  .services {
-    grid-template-columns: 1fr 1fr;
-  }
-
   .hero {
+    grid-template-columns: 1fr;
     padding-top: 48px;
   }
 
-  .contact-card,
+  .hero-copy {
+    order: 1;
+  }
+
   .credentials {
-    grid-column: 1 / -1;
+    order: 2;
+  }
+
+  .contact-card {
+    order: 3;
+  }
+
+  .credentials,
+  .services {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -609,32 +624,6 @@ figcaption {
     flex-direction: column;
   }
 
-  .call-bar {
-    display: flex;
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 20;
-    align-items: center;
-    justify-content: center;
-    min-height: 52px;
-    background: var(--gold);
-    color: var(--ink);
-    font-weight: 700;
-    letter-spacing: 0.06em;
-    text-decoration: none;
-    text-transform: uppercase;
-  }
-
-  .call-bar:hover {
-    color: var(--ink);
-    background: #ffe27a;
-  }
-
-  body {
-    padding-bottom: 52px;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
