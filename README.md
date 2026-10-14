@@ -24,15 +24,13 @@ Refresh the site after the files are in the folder. Until a file is there, that 
 
 To add another pair, copy one before/after block in `index.html` and use the next number (`04-before.jpg`, `04-after.jpg`).
 
-## Add official credential logos
+## Credential logos
 
-The home page shows two text badges: “ICBC Accredited Repair Shop” and “I-CAR Certified”.
+The home page shows two credentials:
 
-When the shop has the official logo files from ICBC and I-CAR, save them as:
+- **ICBC Accredited Repair Shop** — a text badge, until the official logo is added
+- **I-CAR Gold Class** — the official logo already saved at `images/badges/icar.png`
 
-- `images/badges/icbc.png`
-- `images/badges/icar.png`
+When the shop has the official ICBC file, save it as `images/badges/icbc.png`. Do not download or copy logos from the web. Use only files ICBC or I-CAR give you. Those marks are trademarked.
 
-Do not download or copy the logos from the web. Use only files ICBC or I-CAR give you. Those marks are trademarked.
-
-After the files are in place, refresh the site. Each logo replaces its text badge. Until then, the text badge stays.
+Refresh the site after the ICBC file is in the folder. The logo replaces that text badge. Until then, the text badge stays.

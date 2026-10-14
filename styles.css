@@ -312,6 +312,9 @@ h1 {
 
 .badge.has-image img {
   display: block;
+  height: auto;
+  max-height: 210px;
+  max-width: min(220px, 78%);
 }
 
 .badge.has-image .badge-text,
