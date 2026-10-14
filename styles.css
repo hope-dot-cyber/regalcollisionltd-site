@@ -258,7 +258,7 @@ h1 {
 .credentials {
   grid-column: 1 / -1;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(240px, 340px);
   gap: 16px;
   margin-top: 8px;
 }
@@ -373,7 +373,7 @@ h1 {
 
 .services {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 14px;
 }
 
@@ -587,7 +587,6 @@ figcaption {
     order: 3;
   }
 
-  .credentials,
   .services {
     grid-template-columns: 1fr 1fr;
   }

@@ -26,11 +26,6 @@ To add another pair, copy one before/after block in `index.html` and use the nex
 
 ## Credential logos
 
-The home page shows two credentials:
+The home page shows the I-CAR Gold Class logo, saved at `images/badges/icar.png`.
 
-- **ICBC Accredited Repair Shop** — a text badge, until the official logo is added
-- **I-CAR Gold Class** — the official logo already saved at `images/badges/icar.png`
-
-When the shop has the official ICBC file, save it as `images/badges/icbc.png`. Do not download or copy logos from the web. Use only files ICBC or I-CAR give you. Those marks are trademarked.
-
-Refresh the site after the ICBC file is in the folder. The logo replaces that text badge. Until then, the text badge stays.
+The ICBC badge is commented out in `index.html` and is not shown. Do not publish it until ICBC gives written approval. After that approval, uncomment the placeholder and save the official file as `images/badges/icbc.png`. Do not download or copy logos from the web. Use only a file ICBC gives you.
